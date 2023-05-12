@@ -1,0 +1,41 @@
+* {
+  /* outline: red dashed 1px; */
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(51, 49, 51, 0.553);
+}
+.box {
+  max-width: 1200px;
+  width: 90%;
+  min-width: 769px;
+  margin: 20px auto;
+}
+.note {
+  box-sizing: border-box;
+  display: inline-block;
+  width: calc(30.3% - 0.27em);
+  background-color: #d6e07f;
+  vertical-align: top;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 1.5%;
+  position: relative; 
+}
+.note::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5px 5px 0 0;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -50px;
+}
+.note-title {
+  text-align: center;
+  text-shadow: -2px -2px white, 2px 2px darkgray;
+  color: #d2e185;
+}
